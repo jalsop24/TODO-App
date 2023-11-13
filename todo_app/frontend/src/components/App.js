@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
+import { Route, Link, BrowserRouter as Router, Routes } from "react-router-dom";
 import HomePage from "./Homepage";
+import TodoListPage from "./TodoList";
 
 export default function App(props) {
   return (
-    <>
-      <h1>Testing React Code</h1>
-      <p>Hello {props.name}</p>
-
-      <HomePage />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/todo-list" element={<TodoListPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 const appDiv = document.getElementById("app");
-render(<App name="jimbo" />, appDiv);
+render(<App />, appDiv);
