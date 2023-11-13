@@ -4,16 +4,14 @@ html, body {
     padding: 0;
 }
 
-main {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
 #app {
     width: 100%;
     height: 100%;
-    display: flex;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0.5em;
 }
