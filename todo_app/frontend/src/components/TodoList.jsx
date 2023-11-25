@@ -5,7 +5,7 @@ import TodoItem from "./TodoItem";
 const items = [
   {
     name: "First Item",
-    body: "This is the first todo item.",
+    body: "This is the first todo item. It is also the best item. Yes :)",
   },
   {
     name: "Second Item",
