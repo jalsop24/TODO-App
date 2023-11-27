@@ -1,19 +1,24 @@
+{% load django_vite %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% vite_hmr_client %}
+  {% vite_react_refresh %}
+  {% load static %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TODO</title>
-  {% load static %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
   />
-  <link rel="stylesheet" type="text/css" href="../static/css/index.css"/>
+  {% vite_asset 'css/index.css' %}
+
 </head>
 <body>
   <div id="app"></div>
-  <script type="module" src="../static/frontend/main.js"></script>
+  {% vite_asset 'index.js' %}
 </body>
 </html>

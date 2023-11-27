@@ -9,7 +9,7 @@ const items = [
   },
   {
     name: "Second Item",
-    body: "This is the second todo item.",
+    body: "This is the second todo item. This is the second priority.",
   },
   {
     name: "Third Item",

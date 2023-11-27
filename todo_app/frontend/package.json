@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite server",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
