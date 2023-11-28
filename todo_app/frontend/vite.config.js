@@ -11,12 +11,6 @@ export default defineConfig((mode) => {
   return {
     root: resolve(INPUT_DIR),
     base: "/static/" + env.STATIC_URL_PREFIX,
-    rollupOptions: {
-      input: {
-        index: join(INPUT_DIR, "/index.js"),
-        css: join(INPUT_DIR, "/css/index.css"),
-      },
-    },
     resolve: {
       alias: {
         "@": resolve(INPUT_DIR),
@@ -27,6 +21,12 @@ export default defineConfig((mode) => {
       emptyOutDir: true,
       // Relative to the root
       outDir: resolve(OUTPUT_DIR),
+      rollupOptions: {
+        input: {
+          index: join(INPUT_DIR, "/index.js"),
+          css: join(INPUT_DIR, "/css/index.css"),
+        },
+      },
     },
     server: {
       host: "localhost",
