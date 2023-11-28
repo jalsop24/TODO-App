@@ -31,6 +31,7 @@ DJANGO_VITE = {
         "dev_mode": True,
         "dev_server_port": config("VITE_PORT"),
         "static_url_prefix": config("STATIC_URL_PREFIX"),
+        "manifest_path": "./frontend/static/frontend/.vite/manifest.json",
     },
 }
 
